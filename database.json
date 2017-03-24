@@ -1,0 +1,19 @@
+{
+	"records":[
+	{
+		"Name":"Khyati",
+		"Age":"12"
+	},
+	{
+		"Name":"Swati",
+		"Age":"21"
+	},
+	{
+		"Name":"Niyati",
+		"Age":"22"
+	},
+	{	
+		"Name":"Kirti",
+		"Age":"31"
+	}]
+}

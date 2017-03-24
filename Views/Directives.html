@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Directives</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="" ng-init="takeIt=['Khyati','Archana','Sheetal','VijayaLakshmi']; array=[{name:'Sheekha',age:'12'},{name:'payal',age:'30'}]">
+	<input type="text" ng-model='takeIt[2]'>
+	
+	<!-- Binding with (ng-bind) directive -->
+	<div class="" ng-bind="ta0eIt[2]"></div>
+                       	
+	<!-- Binding with Expression -->
+	<p>{{takeIt[2]}}</p>
+	
+	<!-- Array -->
+	<div class="" ng-repeat='x in takeIt'>
+		{{x}}
+	</div>
+	
+	
+</body>
+</html>

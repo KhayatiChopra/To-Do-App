@@ -1,0 +1,25 @@
+<html> <head>     <meta charset="UTF-8">     <title>Directives</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min
+.js"></script> </head> <body ng-app="myApp" ng-controller='myCtrl'>
+	
+	<input type="text" ng-model='takeIt'>
+	<script>
+	var app = 	angular.module('myApp',[]);
+	app.controller('myCtrl',function($scope){
+		$scope.takeIt = 'sdfg';
+	});
+	</script>
+	<!-- Binding with (ng-bind) directive -->
+	<div class="" ng-bind="takeIt[2]"></div>
+	
+	<!-- Binding with Expression -->
+	<p>{{takeIt[2]}}</p>
+	
+	<!-- Array -->
+	<div class="" ng-repeat='x in takeIt'>
+		{{x}}
+	</div>
+	
+	
+</body>
+</html>

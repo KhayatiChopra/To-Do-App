@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> AngularJS | Factories</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	
+	<script src='../JS/angular-route.min.js'></script>
+	<script src='../JS/httpcontroller4.js'></script>
+
+</head>
+<body>
+
+<div ng-app='myApp'>
+	<div ng-controller="httpcontroller">
+		<h2>Message Number :</h2>
+		
+		<input ng-click='onButtonClick' type="button" value="What's New Message ?">
+		
+		<p class= 'message' ng-show='msg == "msg1" '>
+			Hey ! Happy New Year !
+		</p>
+		<p class= 'message' ng-show='msg == "msg2" '>
+			May you get Money !
+		</p>
+
+	</div>
+</div>
+
+
+</body>
+</html>

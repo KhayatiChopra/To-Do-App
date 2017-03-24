@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS | Passing Scope</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	
+	<script src='../JS/angular-route.min.js'></script>
+	<script src='../JS/httpcontroller.js'></script>
+
+
+</head>
+<body>
+
+<div ng-app='myApp'>
+	<div ng-controller="httpcontroller">
+		<h2>Names and Age :</h2>
+		<input type="search" ng-model="searchName.asdf">
+		<ul>
+			
+			<li ng-repeat="i in [1]">
+			<input type="search" ng-model="searchName.asdf">
+				Inside: {{i}} {{searchName.asdf}}
+				
+			</li>
+			{{searchName.property}}
+			Outside: {{i}} {{searchName.asdf}}
+
+			<li ng-repeat = "i in someArray track by $index">
+				{{i}}
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+</body>
+</html>

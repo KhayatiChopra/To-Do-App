@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> AngularJS | Factories</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	
+	<script src='../JS/angular-route.min.js'></script>
+	<script src='../JS/httpcontroller3.js'></script>
+
+</head>
+<body>
+
+<div ng-app='myApp'>
+	<div ng-controller="httpcontroller">
+		<h2>Random Number :</h2>
+		
+		<input ng-click='onButtonClick' type="button" value="Generate New Number">
+		{{randomNumber}}
+	</div>
+</div>
+
+
+</body>
+</html>
